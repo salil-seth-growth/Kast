@@ -4,7 +4,7 @@
 An unsolicited growth strategy document built for KAST — a stablecoin Visa card 
 platform that reached 1M users in under a year and raised an $80M Series A.
 
-**Live →**
+**Live →** https://salil-seth-growth.github.io/Kast/
 
 ---
 
