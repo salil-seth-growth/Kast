@@ -10,8 +10,6 @@ platform that reached 1M users in under a year and raised an $80M Series A.
 
 ## What this is
 
-Instead of a cover letter, I wrote a growth plan.
-
 This document maps KAST's funnel, identifies the highest-leverage gaps, and 
 proposes four concrete growth experiments — each with mechanics, instrumentation, 
 and success metrics. It also includes a 4-tier affiliate program redesign and a 
