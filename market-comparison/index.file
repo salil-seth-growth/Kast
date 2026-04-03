@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAST & Redotpay — Affiliate & Referral Programs Intel | Cashi Strategy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Satoshi:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --orange:#FF6B2B;--orange-dark:#D94E14;--orange-mid:#FF8A55;
+  --orange-light:#FFF0EA;--orange-xlight:#FFF9F6;--orange-border:#FFD4BC;
+  --navy:#1A1F36;--navy-mid:#2D3554;--navy-light:#E8ECF8;--navy-xlight:#F4F5FA;
+  --bg:#FAFAF8;--white:#FFFFFF;--border:#E8E6E0;--border2:#D8D5CC;
+  --t1:#1A1814;--t2:#5C5851;--t3:#9B9790;--t4:#C8C5BE;
+  --kast:#5C6EF0;--kast-dk:#3344CC;--kast-lt:#ECEEFF;--kast-bd:#B8C0F8;--kast-mid:#7B8CF5;
+  --rdp:#00A388;--rdp-dk:#007A65;--rdp-lt:#E6FAF7;--rdp-bd:#9FE5D5;
+  --red:#E8443A;--red-lt:#FEEEEE;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Satoshi',sans-serif;background:var(--bg);color:var(--t1);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,31,54,.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07);height:60px;display:flex;align-items:center;padding:0 max(32px,calc(50% - 720px));justify-content:space-between}
+.nav-logo{font-family:'Cabinet Grotesk',sans-serif;font-size:18px;font-weight:900;color:white;letter-spacing:-.5px;display:flex;align-items:center;gap:4px;text-decoration:none}
+.nav-logo .dot{color:var(--orange);font-size:22px;line-height:0;position:relative;top:3px}
+.nav-sub{font-size:11px;color:rgba(255,255,255,.35);margin-left:10px;padding-left:10px;border-left:1px solid rgba(255,255,255,.12)}
+.nav-pills{display:flex;gap:4px}
+.nav-pill{font-size:11px;font-weight:600;padding:5px 11px;border-radius:6px;color:rgba(255,255,255,.5);text-decoration:none;transition:all .15s;border:1px solid transparent}
+.nav-pill:hover{color:rgba(255,255,255,.85);background:rgba(255,255,255,.07)}
+.nav-pill.k{color:var(--kast-mid)}
+.nav-pill.r{color:var(--rdp)}
+.nav-pill.o{color:var(--orange-mid)}
+
+/* ── HERO ── */
+.hero{min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:100px max(32px,calc(50% - 720px)) 72px;position:relative;overflow:hidden;text-align:center;background:var(--navy)}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 45% at 15% 50%,rgba(92,110,240,.14) 0%,transparent 65%),radial-gradient(ellipse 55% 40% at 85% 50%,rgba(0,163,136,.12) 0%,transparent 65%),radial-gradient(ellipse 40% 30% at 50% -10%,rgba(255,107,43,.1) 0%,transparent 60%);pointer-events:none}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,107,43,.14);border:1px solid rgba(255,107,43,.28);color:var(--orange-mid);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:24px;position:relative;z-index:1}
+.pill-dot{width:5px;height:5px;border-radius:50%;background:var(--orange);animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+h1.hero-h{font-family:'Cabinet Grotesk',sans-serif;font-size:clamp(30px,4.2vw,56px);font-weight:900;line-height:1.06;letter-spacing:-2px;color:white;margin-bottom:16px;position:relative;z-index:1}
+h1.hero-h em{font-style:normal;color:var(--orange)}
+.hero-sub{font-size:15px;color:rgba(255,255,255,.45);max-width:580px;margin:0 auto 48px;line-height:1.8;position:relative;z-index:1}
+
+/* Hero scoreboard */
+.hero-scoreboard{display:grid;grid-template-columns:1fr 1px 1fr;position:relative;z-index:1;width:100%;max-width:780px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:20px;overflow:hidden}
+.hs-divider{background:rgba(255,255,255,.09)}
+.hs-side{padding:28px 36px}
+.hs-platform{display:flex;align-items:center;gap:10px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.hs-badge{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Cabinet Grotesk',sans-serif;font-size:12px;font-weight:900;color:white;flex-shrink:0}
+.hs-badge-k{background:var(--kast)}
+.hs-badge-r{background:var(--rdp-dk)}
+.hs-platform-name{font-family:'Cabinet Grotesk',sans-serif;font-size:17px;font-weight:900;color:white}
+.hs-platform-tag{font-size:10px;color:rgba(255,255,255,.35);margin-top:1px}
+.hs-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px}
+.hs-stat-val{font-family:'Cabinet Grotesk',sans-serif;font-size:22px;font-weight:900;line-height:1;letter-spacing:-.8px}
+.hs-stat-lbl{font-size:10px;color:rgba(255,255,255,.35);margin-top:3px;line-height:1.3}
+.kast-c{color:var(--kast-mid)}
+.rdp-c{color:var(--rdp)}
+
+/* ── SECTION SHELL ── */
+.section{padding:72px max(32px,calc(50% - 720px))}
+.section-alt{background:var(--white)}
+.section-k{background:var(--kast-lt)}
+.section-r{background:var(--rdp-lt)}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+.eyebrow-k{color:var(--kast)}
+.eyebrow-r{color:var(--rdp-dk)}
+.eyebrow-o{color:var(--orange)}
+.eyebrow-n{color:var(--t4)}
+.sh{font-family:'Cabinet Grotesk',sans-serif;font-size:clamp(22px,2.8vw,34px);font-weight:800;line-height:1.1;letter-spacing:-.8px;color:var(--navy);margin-bottom:10px}
+.ss{font-size:14px;color:var(--t2);max-width:640px;line-height:1.75;margin-bottom:36px}
+hr.div{border:none;border-top:1px solid var(--border);margin:0 max(32px,calc(50% - 720px))}
+
+/* ── PLATFORM HEADER CARD ── */
+.platform-header{display:flex;align-items:flex-start;gap:24px;padding:28px 32px;border-radius:18px;border:1.5px solid;margin-bottom:40px}
+.ph-k{background:white;border-color:var(--kast-bd)}
+.ph-r{background:white;border-color:var(--rdp-bd)}
+.ph-badge{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'Cabinet Grotesk',sans-serif;font-size:20px;font-weight:900;color:white;flex-shrink:0}
+.ph-badge-k{background:var(--kast)}
+.ph-badge-r{background:var(--rdp-dk)}
+.ph-right{flex:1}
+.ph-name{font-family:'Cabinet Grotesk',sans-serif;font-size:22px;font-weight:900;color:var(--navy);margin-bottom:4px}
+.ph-tag{font-size:12px;color:var(--t3);margin-bottom:12px}
+.ph-body{font-size:13px;color:var(--t2);line-height:1.7;max-width:680px}
+.ph-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.ph-chip{font-size:11px;font-weight:600;padding:4px 11px;border-radius:20px;border:1.5px solid}
+.chip-k{background:var(--kast-lt);color:var(--kast-dk);border-color:var(--kast-bd)}
+.chip-r{background:var(--rdp-lt);color:var(--rdp-dk);border-color:var(--rdp-bd)}
+.chip-orange{background:var(--orange-light);color:var(--orange-dark);border-color:var(--orange-border)}
+
+/* ── TIER TABLE ── */
+.tier-wrap{overflow-x:auto;margin-bottom:36px;border-radius:14px;border:1.5px solid var(--border)}
+.tier-table{width:100%;border-collapse:collapse;font-size:13px;min-width:700px}
+.tier-table thead th{padding:11px 16px;text-align:left;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--bg);border-bottom:2px solid var(--border);color:var(--t3)}
+.tier-table tbody td{padding:13px 16px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.5;color:var(--t2);font-size:13px}
+.tier-table tbody tr:last-child td{border-bottom:none}
+.tier-table tbody tr:hover td{background:rgba(26,31,54,.02)}
+.tier-label{font-family:'Cabinet Grotesk',sans-serif;font-weight:900;font-size:14px}
+.tier-label-k{color:var(--kast-dk)}
+.tier-label-r{color:var(--rdp-dk)}
+.tier-threshold{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:5px;margin-top:3px}
+.tt-k{background:var(--kast-lt);color:var(--kast-dk)}
+.tt-r{background:var(--rdp-lt);color:var(--rdp-dk)}
+.tier-highlight{font-family:'Cabinet Grotesk',sans-serif;font-weight:800;color:var(--navy);font-size:15px}
+.tier-sub{font-size:11px;color:var(--t3);display:block;margin-top:2px}
+.invite-tag{display:inline-block;font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;background:var(--orange-light);color:var(--orange-dark);border:1px solid var(--orange-border);margin-left:6px;vertical-align:middle}
+.hidden-tag{display:inline-block;font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;background:#FEF4E0;color:#8C5E00;border:1px solid #F5C870;margin-left:6px;vertical-align:middle}
+
+/* ── COMMISSION STREAM CARDS ── */
+.stream-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:36px}
+.stream-card{border-radius:14px;border:1.5px solid var(--border);background:var(--white);padding:20px 22px}
+.stream-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;margin-bottom:14px}
+.si-k{background:var(--kast-lt)}
+.si-r{background:var(--rdp-lt)}
+.si-o{background:var(--orange-light)}
+.stream-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}
+.sl-k{color:var(--kast)}
+.sl-r{color:var(--rdp-dk)}
+.sl-o{color:var(--orange-dark)}
+.stream-rate{font-family:'Cabinet Grotesk',sans-serif;font-size:26px;font-weight:900;line-height:1;letter-spacing:-.8px;color:var(--navy);margin-bottom:6px}
+.stream-title{font-size:13px;font-weight:700;color:var(--t1);margin-bottom:6px;line-height:1.3}
+.stream-body{font-size:12px;color:var(--t2);line-height:1.6}
+.stream-timing{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;padding:3px 9px;border-radius:6px;margin-top:10px}
+.st-instant{background:#E8F5E9;color:#2E7D32;border:1px solid #A5D6A7}
+.st-30d{background:var(--red-lt);color:var(--red);border:1px solid #FFCDD2}
+.st-weekly{background:var(--orange-light);color:var(--orange-dark);border:1px solid var(--orange-border)}
+.st-tge{background:var(--kast-lt);color:var(--kast-dk);border:1px solid var(--kast-bd)}
+
+/* ── PROMO / LEADERBOARD ── */
+.promo-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:36px}
+.promo-card{border-radius:16px;padding:26px 28px;border:1.5px solid}
+.promo-2x{background:var(--navy);border-color:var(--navy-mid)}
+.promo-lb{background:var(--kast-lt);border-color:var(--kast-bd)}
+.promo-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.pl-white{color:rgba(255,255,255,.4)}
+.pl-k{color:var(--kast)}
+.promo-title{font-family:'Cabinet Grotesk',sans-serif;font-size:20px;font-weight:900;line-height:1.1;margin-bottom:10px;letter-spacing:-.4px}
+.pt-white{color:white}
+.pt-navy{color:var(--navy)}
+.promo-body{font-size:13px;line-height:1.65}
+.pb-white{color:rgba(255,255,255,.5)}
+.pb-dark{color:var(--t2)}
+.promo-highlight{font-family:'Cabinet Grotesk',sans-serif;font-size:13px;font-weight:800;color:var(--orange)}
+.lb-prizes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.lb-prize{text-align:center;padding:14px 10px;border-radius:10px;background:white;border:1.5px solid var(--kast-bd)}
+.lb-rank{font-size:10px;font-weight:700;color:var(--t4);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.lb-amount{font-family:'Cabinet Grotesk',sans-serif;font-size:22px;font-weight:900;color:var(--kast-dk);letter-spacing:-.5px}
+.lb-cur{font-size:10px;color:var(--kast);font-weight:600;margin-top:2px}
+.lb-1st .lb-rank{color:var(--orange-dark)}
+.lb-1st .lb-amount{color:var(--orange-dark)}
+.lb-1st{border-color:var(--orange-border);background:var(--orange-xlight)}
+
+/* ── FOUR PROGRAMS ── */
+.four-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:36px}
+.four-card{border-radius:14px;border:1.5px solid var(--rdp-bd);background:white;padding:18px 16px;position:relative}
+.four-card.four-invite::after{content:'Invite Only';position:absolute;top:12px;right:12px;font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;background:var(--orange-light);color:var(--orange-dark);border:1px solid var(--orange-border)}
+.four-num{font-family:'Cabinet Grotesk',sans-serif;font-size:11px;font-weight:900;color:var(--rdp-dk);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.four-title{font-family:'Cabinet Grotesk',sans-serif;font-size:15px;font-weight:800;color:var(--navy);margin-bottom:8px;line-height:1.2}
+.four-body{font-size:12px;color:var(--t2);line-height:1.6}
+.four-tag{display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;border-radius:5px;background:var(--rdp-lt);color:var(--rdp-dk);border:1px solid var(--rdp-bd);margin-top:10px}
+
+/* ── META CARDS (payout/access) ── */
+.meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:36px}
+.meta-card{border-radius:14px;border:1.5px solid var(--border);background:var(--white);padding:20px 22px}
+.meta-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);margin-bottom:10px}
+.meta-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px}
+.meta-row:last-child{border-bottom:none;padding-bottom:0}
+.meta-key{color:var(--t3);font-size:12px}
+.meta-val{font-weight:700;color:var(--t1);font-size:12px;text-align:right;max-width:60%}
+
+/* ── WEAKNESS CARDS ── */
+.weak-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:36px}
+.weak-col{}
+.weak-col-header{display:flex;align-items:center;gap:10px;padding:14px 18px;border-radius:12px;margin-bottom:14px}
+.wch-k{background:var(--kast-lt);border:1.5px solid var(--kast-bd)}
+.wch-r{background:var(--rdp-lt);border:1.5px solid var(--rdp-bd)}
+.wch-badge{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-family:'Cabinet Grotesk',sans-serif;font-size:11px;font-weight:900;color:white;flex-shrink:0}
+.wbg-k{background:var(--kast)}
+.wbg-r{background:var(--rdp-dk)}
+.wch-name{font-family:'Cabinet Grotesk',sans-serif;font-size:15px;font-weight:900;color:var(--navy)}
+.weak-card{border-radius:12px;border:1.5px solid var(--border);background:var(--white);padding:16px 18px;margin-bottom:10px;transition:all .2s;position:relative;overflow:hidden}
+.weak-card-k::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--kast)}
+.weak-card-r::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--rdp)}
+.weak-card-crit::before{background:var(--red)}
+.weak-sev{font-size:9px;font-weight:800;padding:2px 7px;border-radius:4px;display:inline-block;margin-bottom:8px;text-transform:uppercase;letter-spacing:.06em}
+.sev-high{background:var(--red-lt);color:var(--red);border:1px solid #FFCDD2}
+.sev-med{background:#FEF4E0;color:#8C5E00;border:1px solid #F5C870}
+.weak-title{font-weight:700;color:var(--t1);font-size:13px;margin-bottom:5px}
+.weak-body{font-size:12px;color:var(--t2);line-height:1.6}
+
+/* ── COMPARISON TABLE ── */
+.comp-wrap{overflow-x:auto;border-radius:14px;border:1.5px solid var(--border)}
+.comp-table{width:100%;border-collapse:collapse;font-size:13px;min-width:680px}
+.comp-table thead tr th{padding:11px 16px;text-align:left;font-weight:700;font-size:10px;letter-spacing:.08em;text-transform:uppercase;border-bottom:2px solid}
+.th-dim{color:var(--t3);border-color:var(--border);background:var(--bg);width:28%}
+.th-kast{color:var(--kast-dk);border-color:var(--kast);background:var(--kast-lt);width:36%}
+.th-rdp{color:var(--rdp-dk);border-color:var(--rdp);background:var(--rdp-lt);width:36%}
+.comp-table tbody td{padding:11px 16px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.55;color:var(--t2);font-size:13px}
+.comp-table td:first-child{font-weight:700;color:var(--t1);font-size:12px;background:var(--bg)}
+.comp-table tr:last-child td{border-bottom:none}
+.comp-table tbody tr:hover td{filter:brightness(.98)}
+.badge-k{display:inline-block;font-size:9px;font-weight:800;padding:2px 6px;border-radius:4px;background:var(--kast-lt);color:var(--kast-dk);border:1px solid var(--kast-bd);margin-left:4px;vertical-align:middle;white-space:nowrap}
+.badge-r{display:inline-block;font-size:9px;font-weight:800;padding:2px 6px;border-radius:4px;background:var(--rdp-lt);color:var(--rdp-dk);border:1px solid var(--rdp-bd);margin-left:4px;vertical-align:middle;white-space:nowrap}
+.badge-tie{display:inline-block;font-size:9px;font-weight:800;padding:2px 6px;border-radius:4px;background:var(--bg);color:var(--t3);border:1px solid var(--border);margin-left:4px;vertical-align:middle}
+.badge-warn{display:inline-block;font-size:9px;font-weight:800;padding:2px 6px;border-radius:4px;background:var(--red-lt);color:var(--red);border:1px solid #FFCDD2;margin-left:4px;vertical-align:middle}
+.cell-k{background:rgba(92,110,240,.03)}
+.cell-r{background:rgba(0,163,136,.03)}
+.strong{font-weight:700;color:var(--t1)}
+
+/* ── POSITIONING VERDICT ── */
+.verdict-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:36px}
+.verdict-card{border-radius:16px;padding:22px 24px;border:1.5px solid}
+.vc-k{background:var(--kast-lt);border-color:var(--kast-bd)}
+.vc-r{background:var(--rdp-lt);border-color:var(--rdp-bd)}
+.vc-cashi{background:var(--orange-xlight);border-color:var(--orange-border)}
+.verdict-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+.vl-k{color:var(--kast)}
+.vl-r{color:var(--rdp-dk)}
+.vl-o{color:var(--orange-dark)}
+.verdict-title{font-family:'Cabinet Grotesk',sans-serif;font-size:17px;font-weight:900;color:var(--navy);margin-bottom:10px;line-height:1.2}
+.verdict-body{font-size:12px;color:var(--t2);line-height:1.65}
+.verdict-quote{font-style:italic;font-size:13px;color:var(--t1);margin-top:12px;padding-top:10px;border-top:1px solid var(--orange-border);line-height:1.6}
+
+/* ── SOURCES ── */
+.sources-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.source-row{display:flex;align-items:flex-start;gap:10px;font-size:12px;color:var(--t2);padding:8px 12px;background:var(--white);border-radius:8px;border:1px solid var(--border)}
+.source-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:5px}
+.sd-k{background:var(--kast)}
+.sd-r{background:var(--rdp)}
+.sd-o{background:var(--orange)}
+.source-row a{color:var(--t2);text-decoration:none;transition:color .15s}
+.source-row a:hover{color:var(--navy)}
+
+/* ── FOOTER ── */
+footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.07);padding:24px max(32px,calc(50% - 720px));display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.foot-logo{font-family:'Cabinet Grotesk',sans-serif;font-size:16px;font-weight:900;color:rgba(255,255,255,.7)}
+.foot-logo .dot{color:var(--orange)}
+.foot-note{font-size:11px;color:rgba(255,255,255,.25)}
+
+/* ── PRINT ── */
+@media print{
+  nav,footer{display:none}
+  body{font-size:12px}
+  .hero{min-height:auto;padding:40px 32px 32px}
+  .section{padding:36px 32px}
+  h1.hero-h{font-size:32px}
+  .promo-2x{background:#1A1F36 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .section-k,.section-r{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .stream-card,.weak-card,.four-card,.meta-card,.verdict-card{break-inside:avoid}
+  .tier-wrap{break-inside:avoid}
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  nav{padding:0 20px}
+  .nav-pills{display:none}
+  .hero{padding:90px 20px 52px;min-height:auto}
+  h1.hero-h{letter-spacing:-1px}
+  .hero-scoreboard{grid-template-columns:1fr}
+  .hs-divider{display:none}
+  .section{padding:52px 20px}
+  .stream-grid{grid-template-columns:1fr 1fr}
+  .four-grid{grid-template-columns:1fr 1fr}
+  .promo-grid,.weak-grid,.verdict-grid,.meta-grid{grid-template-columns:1fr}
+  .comp-table thead th,.comp-table tbody td{padding:9px 10px}
+}
+@media(max-width:600px){
+  .stream-grid,.four-grid,.sources-grid{grid-template-columns:1fr}
+  .platform-header{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a class="nav-logo" href="#top">Cashi<span class="dot">.</span>
+    <span class="nav-sub">Affiliate Intel Brief</span>
+  </a>
+  <div class="nav-pills">
+    <a class="nav-pill k" href="#kast">KAST</a>
+    <a class="nav-pill r" href="#redotpay">Redotpay</a>
+    <a class="nav-pill o" href="#comparison">Head-to-Head</a>
+    <a class="nav-pill" href="#weaknesses">Weaknesses</a>
+    <a class="nav-pill o" href="#positioning">Positioning</a>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<div class="hero" id="top">
+  <div class="hero-pill"><span class="pill-dot"></span>Affiliate & Referral Programs — March 2026</div>
+  <h1 class="hero-h">KAST & Redotpay<br><em>Affiliate Programs</em> — Full Intel</h1>
+  <p class="hero-sub">Commission structures, tier tables, payout mechanics, distribution programs, and documented weaknesses — everything needed to position Cashi as the category's dominant affiliate program.</p>
+
+  <div class="hero-scoreboard">
+    <div class="hs-side">
+      <div class="hs-platform">
+        <div class="hs-badge hs-badge-k">K</div>
+        <div>
+          <div class="hs-platform-name">KAST</div>
+          <div class="hs-platform-tag">Premium-aspirational · Instant USDC · TGE Q2 2026</div>
+        </div>
+      </div>
+      <div class="hs-stats">
+        <div>
+          <div class="hs-stat-val kast-c">4 tiers</div>
+          <div class="hs-stat-lbl">5 / 50 / 100 / 500 referrals</div>
+        </div>
+        <div>
+          <div class="hs-stat-val kast-c">0.35%</div>
+          <div class="hs-stat-lbl">Max transaction commission</div>
+        </div>
+        <div>
+          <div class="hs-stat-val kast-c">Instant</div>
+          <div class="hs-stat-lbl">USDC payout speed</div>
+        </div>
+        <div>
+          <div class="hs-stat-val kast-c">$1,000</div>
+          <div class="hs-stat-lbl">Daily leaderboard top prize</div>
+        </div>
+      </div>
+    </div>
+    <div class="hs-divider"></div>
+    <div class="hs-side">
+      <div class="hs-platform">
+        <div class="hs-badge hs-badge-r">R</div>
+        <div>
+          <div class="hs-platform-name">Redotpay</div>
+          <div class="hs-platform-tag">Institutional · Multi-channel · 160+ countries</div>
+        </div>
+      </div>
+      <div class="hs-stats">
+        <div>
+          <div class="hs-stat-val rdp-c">20–40%</div>
+          <div class="hs-stat-lbl">Commission range on activation</div>
+        </div>
+        <div>
+          <div class="hs-stat-val rdp-c">4 programs</div>
+          <div class="hs-stat-lbl">Referral · KOL · Affiliate · Angels</div>
+        </div>
+        <div>
+          <div class="hs-stat-val rdp-c">Instant</div>
+          <div class="hs-stat-lbl">Card activation payout</div>
+        </div>
+        <div>
+          <div class="hs-stat-val rdp-c">30 days</div>
+          <div class="hs-stat-lbl">Transaction commission lag</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     KAST
+════════════════════════════════════════ -->
+<div class="section section-alt" id="kast">
+  <div class="eyebrow eyebrow-k">Platform 01</div>
+  <h2 class="sh">KAST Affiliate Program</h2>
+  <p class="ss">Performance-based, 4-level multi-tier program. Affiliates earn instant USDC commissions on card activations, physical card purchases, and recurring lifetime transaction volume — plus KAST Points convertible at the Q2 2026 TGE.</p>
+
+  <div class="platform-header ph-k">
+    <div class="ph-badge ph-badge-k">K</div>
+    <div class="ph-right">
+      <div class="ph-name">KAST</div>
+      <div class="ph-tag">kast.xyz/affiliate — Open registration · Real-time dashboard · Instant USDC</div>
+      <div class="ph-body">Breadth of card tiers (Standard → Luxe) creates flexible commission surfaces at every level. Lifetime recurring transaction commissions reward long-term loyalty over single activations. Dual-stack incentive (cash now + token upside) is the primary differentiator for KOL recruitment. A live competitive leaderboard adds daily USDC prize pools on top of the base commission structure.</div>
+      <div class="ph-chips">
+        <span class="ph-chip chip-k">Open Registration</span>
+        <span class="ph-chip chip-k">Instant USDC</span>
+        <span class="ph-chip chip-k">Lifetime Transaction Commissions</span>
+        <span class="ph-chip chip-k">KAST Points → TGE Q2 2026</span>
+        <span class="ph-chip chip-k">Real-Time Dashboard</span>
+        <span class="ph-chip chip-orange">2× Commission Promo Active</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tier Table -->
+  <div class="eyebrow eyebrow-k" style="margin-bottom:12px">Commission Tier Structure</div>
+  <div class="tier-wrap">
+    <table class="tier-table">
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Threshold</th>
+          <th>Spend Bonus (Standard)</th>
+          <th>Physical Card — Standard</th>
+          <th>Physical Card — Premium / Luxe</th>
+          <th>Transaction Commission</th>
+          <th>KAST Points Bonus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="tier-label tier-label-k">Level 1</span></td>
+          <td><span class="tier-threshold tt-k">5 referrals</span></td>
+          <td><span class="tier-highlight">$8</span><span class="tier-sub">per active user</span></td>
+          <td><span class="tier-highlight">20%</span><span class="tier-sub">of card fee</span></td>
+          <td><span class="tier-highlight">5%</span><span class="tier-sub">of card fee</span></td>
+          <td><span class="tier-highlight">0.10%</span><span class="tier-sub">of spend volume</span></td>
+          <td><span class="tier-highlight">5,000</span><span class="tier-sub">KAST points</span></td>
+        </tr>
+        <tr>
+          <td><span class="tier-label tier-label-k">Level 2</span></td>
+          <td><span class="tier-threshold tt-k">50 referrals</span></td>
+          <td><span class="tier-highlight">$10</span><span class="tier-sub">per active user</span></td>
+          <td><span class="tier-highlight">50%</span><span class="tier-sub">of card fee</span></td>
+          <td><span class="tier-highlight">10%</span><span class="tier-sub">of card fee</span></td>
+          <td><span class="tier-highlight">0.20%</span><span class="tier-sub">of spend volume</span></td>
+          <td><span class="tier-highlight">5,000</span><span class="tier-sub">KAST points</span></td>
+        </tr>
+        <tr>
+          <td><span class="tier-label tier-label-k">Level 3</span></td>
+          <td><span class="tier-threshold tt-k">100 referrals</span></td>
+          <td><span class="tier-highlight">$10</span><span class="tier-sub">per active user</span></td>
+          <td><span class="tier-highlight">60%</span><span class="tier-sub">of card fee</span></td>
+          <td><span class="tier-highlight">10%</span><span class="tier-sub">of card fee</span></td>
+          <td><span class="tier-highlight">0.25%</span><span class="tier-sub">of spend volume</span></td>
+          <td><span class="tier-highlight">5,000</span><span class="tier-sub">KAST points</span></td>
+        </tr>
+        <tr>
+          <td><span class="tier-label tier-label-k">Level 4</span></td>
+          <td><span class="tier-threshold tt-k">500 referrals</span></td>
+          <td><span class="tier-highlight">$10</span><span class="tier-sub">per active user</span></td>
+          <td><span class="tier-highlight">80%</span><span class="tier-sub">of card fee</span></td>
+          <td><span class="tier-highlight">15%</span><span class="tier-sub">of card fee</span></td>
+          <td><span class="tier-highlight">0.35%</span><span class="tier-sub">of spend volume</span></td>
+          <td><span class="tier-highlight">5,000</span><span class="tier-sub">KAST points</span></td>
+        </tr>
+        <tr>
+          <td><span class="tier-label tier-label-k">VIP <span class="invite-tag">Invite Only</span></span></td>
+          <td>Not disclosed</td>
+          <td colspan="5" style="color:var(--t4);font-style:italic">Terms not publicly available — negotiated individually</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:11px;color:var(--t4);margin-bottom:32px">* <strong>Active user definition:</strong> a referred user who completes ≥$100 in total KAST card spending (single or cumulative transactions). Both the spend bonus and doubled 2× promo commission trigger at this milestone.</p>
+
+  <!-- Commission Streams -->
+  <div class="eyebrow eyebrow-k" style="margin-bottom:12px">Commission Streams</div>
+  <div class="stream-grid">
+    <div class="stream-card">
+      <div class="stream-icon si-k">💳</div>
+      <div class="stream-label sl-k">Spend Bonus</div>
+      <div class="stream-rate">$8–10</div>
+      <div class="stream-title">Per active user (≥$100 card spend)</div>
+      <div class="stream-body">Flat cash bonus paid when a referred user hits the $100 spend threshold for the first time. Amount scales from $8 at Level 1 to $10 at Levels 2–4.</div>
+      <span class="stream-timing st-instant">⚡ Instant USDC</span>
+    </div>
+    <div class="stream-card">
+      <div class="stream-icon si-k">🪙</div>
+      <div class="stream-label sl-k">Physical Card Commission</div>
+      <div class="stream-rate">20–80%</div>
+      <div class="stream-title">% of card issuance fee (Standard tier)</div>
+      <div class="stream-body">Paid on physical card purchases. Standard cards: 20% at L1 scaling to 80% at L4. Premium/Luxe cards: 5–15%. Higher percentages reward volume referrers significantly.</div>
+      <span class="stream-timing st-instant">⚡ Instant USDC</span>
+    </div>
+    <div class="stream-card">
+      <div class="stream-icon si-k">🔁</div>
+      <div class="stream-label sl-k">Transaction Commission</div>
+      <div class="stream-rate">0.10–0.35%</div>
+      <div class="stream-title">% of referred users' card spend — recurring, lifetime</div>
+      <div class="stream-body">Earned on every transaction made by referred users forever. No expiry. The most valuable stream for affiliates with large, active referral bases over the long term.</div>
+      <span class="stream-timing st-instant">⚡ Instant USDC</span>
+    </div>
+    <div class="stream-card">
+      <div class="stream-icon si-k">👥</div>
+      <div class="stream-label sl-k">Tier 2 — Multi-Level</div>
+      <div class="stream-rate">+10%</div>
+      <div class="stream-title">Of earnings generated by your referrals' own referrals</div>
+      <div class="stream-body">Compounding incentive for affiliates who recruit other active affiliates. Earns 10% on top of whatever a direct referral earns from their own sub-network.</div>
+      <span class="stream-timing st-instant">⚡ Instant USDC</span>
+    </div>
+    <div class="stream-card">
+      <div class="stream-icon si-k">🏆</div>
+      <div class="stream-label sl-k">KAST Points Stack</div>
+      <div class="stream-rate">5,000+</div>
+      <div class="stream-title">Points per tier unlock + % of referral points</div>
+      <div class="stream-body">5,000 KAST Points per tier. Plus 30% of L1 referrals' points and 6% of L2 referrals' points. Points convert to KAST token at the Q2 2026 TGE (notional value rose $0.03 → $0.10 across seasons).</div>
+      <span class="stream-timing st-tge">🔮 Q2 2026 TGE</span>
+    </div>
+    <div class="stream-card">
+      <div class="stream-icon si-o">🎯</div>
+      <div class="stream-label sl-o">Active Promo — 2× Commission</div>
+      <div class="stream-rate">2×</div>
+      <div class="stream-title">Doubled commission on first $100 spend — indefinite</div>
+      <div class="stream-body">When a referred user hits the $100 spend milestone for the first time, the affiliate earns 2× their standard tier commission. No cap. No end date. Applies at every tier automatically.</div>
+      <span class="stream-timing st-weekly">🔥 No expiry · No cap</span>
+    </div>
+  </div>
+
+  <!-- Leaderboard -->
+  <div class="eyebrow eyebrow-k" style="margin-bottom:12px">Referral Leaderboard</div>
+  <div class="promo-grid">
+    <div class="promo-card promo-2x">
+      <div class="promo-label pl-white">Live Leaderboard</div>
+      <div class="promo-title pt-white">Daily · Weekly · Monthly · All-Time rankings</div>
+      <div class="promo-body pb-white">A competitive leaderboard launched alongside the referral program upgrade. Tracks affiliate rankings across four timeframes. Prizes paid daily in USDC — snapshots lock at midnight UTC, prizes credited the next day.</div>
+      <div class="promo-body pb-white" style="margin-top:10px">Minimum <span class="promo-highlight">500 referral points</span> required to appear. Ties resolved by total KAST Points across all categories.</div>
+    </div>
+    <div class="promo-card promo-lb">
+      <div class="promo-label pl-k">Daily Prizes</div>
+      <div class="promo-title pt-navy">Top 3 daily prize payouts — USDC</div>
+      <div class="lb-prizes">
+        <div class="lb-prize lb-1st">
+          <div class="lb-rank">1st Place</div>
+          <div class="lb-amount">$1,000</div>
+          <div class="lb-cur">USDC / day</div>
+        </div>
+        <div class="lb-prize">
+          <div class="lb-rank">2nd Place</div>
+          <div class="lb-amount">$200</div>
+          <div class="lb-cur">USDC / day</div>
+        </div>
+        <div class="lb-prize">
+          <div class="lb-rank">3rd Place</div>
+          <div class="lb-amount">$100</div>
+          <div class="lb-cur">USDC / day</div>
+        </div>
+      </div>
+      <div class="promo-body pb-dark" style="margin-top:14px;font-size:11px">Max total exclusive bonus potential across all mechanics: <strong>up to $5,000 USDC</strong></div>
+    </div>
+  </div>
+
+  <!-- Meta -->
+  <div class="eyebrow eyebrow-k" style="margin-bottom:12px">Payout & Access Details</div>
+  <div class="meta-grid">
+    <div class="meta-card">
+      <div class="meta-label">Payout</div>
+      <div class="meta-row"><span class="meta-key">Currency</span><span class="meta-val">USDC only</span></div>
+      <div class="meta-row"><span class="meta-key">Speed</span><span class="meta-val">Instant on qualifying event</span></div>
+      <div class="meta-row"><span class="meta-key">Transaction commission timing</span><span class="meta-val">Recurring — no stated settlement lag</span></div>
+      <div class="meta-row"><span class="meta-key">Tracking</span><span class="meta-val">Real-time dashboard</span></div>
+    </div>
+    <div class="meta-card">
+      <div class="meta-label">Access</div>
+      <div class="meta-row"><span class="meta-key">Registration</span><span class="meta-val">Open — anyone can join</span></div>
+      <div class="meta-row"><span class="meta-key">KYC requirement (affiliate)</span><span class="meta-val">Not stated</span></div>
+      <div class="meta-row"><span class="meta-key">VIP / Elite tier</span><span class="meta-val">Invite-only — criteria not published</span></div>
+      <div class="meta-row"><span class="meta-key">Primary target</span><span class="meta-val">Creators, community builders, crypto enthusiasts</span></div>
+    </div>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- ═══════════════════════════════════════
+     REDOTPAY
+════════════════════════════════════════ -->
+<div class="section" id="redotpay">
+  <div class="eyebrow eyebrow-r">Platform 02</div>
+  <h2 class="sh">Redotpay Affiliate Program</h2>
+  <p class="ss">Tiered performance program explicitly targeting institutions, B2B partners, KOLs, and professional marketers. Runs four parallel distribution channels simultaneously — generating multiple parallel growth vectors and contributing to 3M+ users added in a single calendar year.</p>
+
+  <div class="platform-header ph-r">
+    <div class="ph-badge ph-badge-r">R</div>
+    <div class="ph-right">
+      <div class="ph-name">Redotpay</div>
+      <div class="ph-tag">redotpay.com/affiliates — KYC required · 160+ countries · USDT / BTC / ETH / bank transfer</div>
+      <div class="ph-body">Utility-first, institutional scale. The four-program distribution stack (Referral + KOL + Affiliate + Angels) drives parallel acquisition vectors. Three public tiers: LV1 (0–9 referrals), LV2 (10–29), LV3 (30+) — with LV3 top-end rates and Redot Angels terms negotiated. The $100 physical card issuance fee — highest in the category — generates high per-activation payouts but is a documented acquisition suppressor. Transaction commissions settle on a Net-7 basis upon request, with a $100 minimum payout threshold — the 30-day lag cited earlier reflects the default settlement cycle.</div>
+      <div class="ph-chips">
+        <span class="ph-chip chip-r">KYC Required</span>
+        <span class="ph-chip chip-r">160+ Countries</span>
+        <span class="ph-chip chip-r">Multi-Currency Payouts</span>
+        <span class="ph-chip chip-r">4 Parallel Programs</span>
+        <span class="ph-chip chip-r">Instant Card Activation Payout</span>
+        <span class="ph-chip chip-r">Lifetime Cookie Tracking</span>
+        <span class="ph-chip chip-orange">Min Payout $100 · Net-7 ⚠</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tier Table -->
+  <div class="eyebrow eyebrow-r" style="margin-bottom:12px">Commission Tier Structure</div>
+  <div class="tier-wrap">
+    <table class="tier-table">
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Threshold</th>
+          <th>Card Issuance Commission</th>
+          <th>Example — Virtual Card ($10)</th>
+          <th>Transaction Commission</th>
+          <th>Example — Per $1,000 Spend</th>
+          <th>Secondary (Tier 2)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="tier-label tier-label-r">LV1</span></td>
+          <td><span class="tier-threshold tt-r">0–9 referrals</span></td>
+          <td><span class="tier-highlight">20%</span><span class="tier-sub">of issuance fee</span></td>
+          <td><span class="tier-highlight">2 USDT</span><span class="tier-sub">instant on activation</span></td>
+          <td><span class="tier-highlight">0.05%</span><span class="tier-sub">of spend volume</span></td>
+          <td><span class="tier-highlight">0.5 USDT</span><span class="tier-sub">per $1,000 transacted</span></td>
+          <td><span class="tier-highlight">10%</span><span class="tier-sub">of referral's commission</span></td>
+        </tr>
+        <tr>
+          <td><span class="tier-label tier-label-r">LV2</span></td>
+          <td><span class="tier-threshold tt-r">10–29 referrals</span></td>
+          <td><span class="tier-highlight">25%</span><span class="tier-sub">of issuance fee</span></td>
+          <td><span class="tier-highlight">2.5 USDT</span><span class="tier-sub">instant on activation</span></td>
+          <td><span class="tier-highlight">0.10%</span><span class="tier-sub">of spend volume</span></td>
+          <td><span class="tier-highlight">1 USDT</span><span class="tier-sub">per $1,000 transacted</span></td>
+          <td><span class="tier-highlight">10%</span><span class="tier-sub">of referral's commission</span></td>
+        </tr>
+        <tr>
+          <td><span class="tier-label tier-label-r">LV3</span></td>
+          <td><span class="tier-threshold tt-r">≥30 referrals</span></td>
+          <td><span class="tier-highlight">Up to 40%</span><span class="tier-sub">published ceiling</span></td>
+          <td><span class="tier-highlight">Up to 4 USDT</span><span class="tier-sub">exact rate scales with volume</span></td>
+          <td><span class="tier-highlight">Higher</span><span class="tier-sub">exact rate not publicly disclosed</span></td>
+          <td><span class="tier-highlight">Scales up</span><span class="tier-sub">from LV2 baseline</span></td>
+          <td><span class="tier-highlight">10%</span><span class="tier-sub">of referral's commission</span></td>
+        </tr>
+        <tr>
+          <td><span class="tier-label tier-label-r">Redot Angels <span class="invite-tag">Invite Only</span></span></td>
+          <td>Performance-based invitation</td>
+          <td><span class="tier-highlight">Above ceiling</span><span class="tier-sub">individually negotiated</span></td>
+          <td>Negotiated</td>
+          <td>Negotiated</td>
+          <td>Negotiated</td>
+          <td><span class="tier-highlight">10%+</span><span class="tier-sub">negotiated</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:11px;color:var(--t4);margin-bottom:32px">LV1–LV3 tier thresholds and LV1/LV2 commission amounts are publicly confirmed. LV3 top-end rates and Redot Angels terms are not published and are negotiated individually. Physical card payout example at LV1: 20% × $100 = <strong>20 USDT</strong>. At LV2: 25% × $100 = <strong>25 USDT</strong>. Min payout across all tiers: <strong>$100</strong>. Settlement: <strong>Net-7 upon request</strong>.</p>
+
+  <!-- Commission Streams -->
+  <div class="eyebrow eyebrow-r" style="margin-bottom:12px">Three Commission Streams</div>
+  <div class="stream-grid">
+    <div class="stream-card">
+      <div class="stream-icon si-r">💳</div>
+      <div class="stream-label sl-r">Card Activation Commission</div>
+      <div class="stream-rate">20–40%</div>
+      <div class="stream-title">% of card issuance fee — on every card order</div>
+      <div class="stream-body">Virtual card: $10 issuance fee. Physical card: $100 — the highest in the category. Commission = tier % × issuance fee. The $100 physical card generates the largest per-activation payout in the competitor set.</div>
+      <span class="stream-timing st-instant">⚡ Instant USDT</span>
+    </div>
+    <div class="stream-card">
+      <div class="stream-icon si-r">🔁</div>
+      <div class="stream-label sl-r">Transaction (Payment) Commission</div>
+      <div class="stream-rate">0.05–0.10%+</div>
+      <div class="stream-title">% of card spend volume — scales by tier</div>
+      <div class="stream-body">LV1: 0.05% (0.5 USDT per $1,000 spend). LV2: 0.10% (1 USDT per $1,000 spend). LV3: higher, not publicly disclosed. Net-7 settlement upon request with a $100 minimum payout threshold — default cycle is 30 days if not requested.</div>
+      <span class="stream-timing st-30d">⏱ Net-7 on request · $100 min</span>
+    </div>
+    <div class="stream-card">
+      <div class="stream-icon si-r">👥</div>
+      <div class="stream-label sl-r">Secondary (Tier 2) Commission</div>
+      <div class="stream-rate">10%</div>
+      <div class="stream-title">Of your direct referral's own commission earnings</div>
+      <div class="stream-body">When your direct referral recruits their own users, you earn 10% of that referral's commission income. Compounding incentive for affiliates building sub-networks. Matches KAST's Tier 2 rate.</div>
+      <span class="stream-timing st-30d">⏱ 30-day settlement</span>
+    </div>
+  </div>
+
+  <!-- Four Programs -->
+  <div class="eyebrow eyebrow-r" style="margin-bottom:12px">Four Parallel Distribution Programs</div>
+  <div class="four-grid">
+    <div class="four-card">
+      <div class="four-num">Program 01</div>
+      <div class="four-title">Referral Program</div>
+      <div class="four-body">Standard invite link and code, open to all KYC-verified accounts. The widest-reach channel — generates organic word-of-mouth at no incremental cost. $5 sign-up bonus for new users activating via referral code.</div>
+      <div class="four-tag">Open to all users</div>
+    </div>
+    <div class="four-card">
+      <div class="four-num">Program 02</div>
+      <div class="four-title">KOL Program</div>
+      <div class="four-body">Targets creators and influencers with existing crypto-native audiences. Elevated commission rates, negotiated terms, co-marketing support. Primary driver of Redotpay's volume growth — explained as the mechanism behind 3M users in one calendar year.</div>
+      <div class="four-tag">Application required</div>
+    </div>
+    <div class="four-card">
+      <div class="four-num">Program 03</div>
+      <div class="four-title">Affiliate Program</div>
+      <div class="four-body">Performance-based, tiered structure for professional marketers. The formal affiliate track with the published LV1 (0–9) → LV2 (10–29) → LV3 (30+) ladder. Transaction commissions scale from 0.05% at LV1 to 0.10% at LV2. Net-7 settlement upon request; $100 minimum payout threshold.</div>
+      <div class="four-tag">Performance-based</div>
+    </div>
+    <div class="four-card four-invite">
+      <div class="four-num">Program 04</div>
+      <div class="four-title">Redot Angels</div>
+      <div class="four-body">Invite-only tier for the highest-performing affiliates. Above-Exclusive commission rates, exclusive event access, co-branded campaigns. The "Redot Angels" name signals status but appears to deliver limited community infrastructure beyond elevated rates.</div>
+      <div class="four-tag">Elite · Event Access</div>
+    </div>
+  </div>
+
+  <!-- Meta -->
+  <div class="eyebrow eyebrow-r" style="margin-bottom:12px">Payout & Access Details</div>
+  <div class="meta-grid">
+    <div class="meta-card">
+      <div class="meta-label">Payout</div>
+      <div class="meta-row"><span class="meta-key">Currency options</span><span class="meta-val">USDT, BTC, ETH, or bank transfer</span></div>
+      <div class="meta-row"><span class="meta-key">Card activation payout</span><span class="meta-val">Instant on activation</span></div>
+      <div class="meta-row"><span class="meta-key">Transaction settlement</span><span class="meta-val" style="color:var(--red);font-weight:700">Net-7 upon request ⚠</span></div>
+      <div class="meta-row"><span class="meta-key">Minimum payout</span><span class="meta-val" style="color:var(--red);font-weight:700">$100 USDT ⚠</span></div>
+      <div class="meta-row"><span class="meta-key">Cookie tracking</span><span class="meta-val">Lifetime cookies</span></div>
+      <div class="meta-row"><span class="meta-key">Partner Program</span><span class="meta-val">Apply in-app for higher rates</span></div>
+    </div>
+    <div class="meta-card">
+      <div class="meta-label">Access & Reach</div>
+      <div class="meta-row"><span class="meta-key">KYC requirement</span><span class="meta-val">Required before affiliate activation</span></div>
+      <div class="meta-row"><span class="meta-key">Geographic coverage</span><span class="meta-val">160+ countries</span></div>
+      <div class="meta-row"><span class="meta-key">Primary target</span><span class="meta-val">Institutions, B2B, KOLs, professional marketers</span></div>
+      <div class="meta-row"><span class="meta-key">New user sign-up bonus</span><span class="meta-val">$5 USD via referral code</span></div>
+    </div>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- ═══════════════════════════════════════
+     HEAD-TO-HEAD COMPARISON
+════════════════════════════════════════ -->
+<div class="section section-alt" id="comparison">
+  <div class="eyebrow eyebrow-o">Head-to-Head</div>
+  <h2 class="sh">17-Dimension Comparison</h2>
+  <p class="ss">Every structural difference between the two programs — with a verdict on which platform wins each dimension and why.</p>
+
+  <div class="comp-wrap">
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th class="th-dim">Dimension</th>
+          <th class="th-kast">KAST</th>
+          <th class="th-rdp">Redotpay</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Commission model</td>
+          <td class="cell-k">Flat spend bonus + % of card fee + % of transactions <span class="badge-k">KAST wins</span></td>
+          <td class="cell-r">% of card fee + % of transactions only</td>
+        </tr>
+        <tr>
+          <td>Transaction commission rate</td>
+          <td class="cell-k"><strong>0.10–0.35%</strong> recurring, lifetime <span class="badge-k">KAST wins</span></td>
+          <td><strong>0.05% (LV1) → 0.10% (LV2)</strong> — scales by tier; LV3 undisclosed</td>
+        </tr>
+        <tr>
+          <td>Transaction settlement speed</td>
+          <td class="cell-k"><strong>Instant</strong> — no stated lag <span class="badge-k">KAST wins</span></td>
+          <td><strong>30 days</strong> monthly settlement <span class="badge-warn">Key weakness</span></td>
+        </tr>
+        <tr>
+          <td>Card activation payout</td>
+          <td class="cell-k">Instant USDC</td>
+          <td class="cell-r">Instant USDT <span class="badge-tie">Tie</span></td>
+        </tr>
+        <tr>
+          <td>Tier 2 earnings</td>
+          <td>+10% of referral's total earnings</td>
+          <td>10% of referral's commission earnings <span class="badge-tie">Effectively equal</span></td>
+        </tr>
+        <tr>
+          <td>Payout currency</td>
+          <td>USDC only</td>
+          <td class="cell-r">USDT, BTC, ETH, bank transfer <span class="badge-r">Redotpay wins</span></td>
+        </tr>
+        <tr>
+          <td>Tier thresholds</td>
+          <td class="cell-k">Fully published: 5 / 50 / 100 / 500 <span class="badge-k">KAST wins</span></td>
+          <td class="cell-r">Published: LV1 (0–9) / LV2 (10–29) / LV3 (30+) — LV3 top rates undisclosed</td>
+        </tr>
+        <tr>
+          <td>Commission rates transparency</td>
+          <td class="cell-k">Full tier table publicly available <span class="badge-k">KAST wins</span></td>
+          <td>LV1 &amp; LV2 rates confirmed public; LV3 ceiling and Angels terms undisclosed <span class="badge-warn">Partial opacity</span></td>
+        </tr>
+        <tr>
+          <td>Token / points upside</td>
+          <td class="cell-k">KAST Points → Q2 2026 TGE (dual-stack incentive) <span class="badge-k">KAST wins</span></td>
+          <td>No equivalent token or points program</td>
+        </tr>
+        <tr>
+          <td>Competitive leaderboard</td>
+          <td class="cell-k">Live leaderboard — up to $1,000 USDC/day in prizes <span class="badge-k">KAST wins</span></td>
+          <td>No published leaderboard or competitive mechanic</td>
+        </tr>
+        <tr>
+          <td>Active promotions</td>
+          <td class="cell-k">2× commission (indefinite, no cap) <span class="badge-k">KAST wins</span></td>
+          <td>No active promo published</td>
+        </tr>
+        <tr>
+          <td>Physical card fee (user side)</td>
+          <td class="cell-k">Free entry-level card available <span class="badge-k">KAST wins</span></td>
+          <td><strong>$100</strong> physical card — highest in category <span class="badge-warn">Highest barrier</span></td>
+        </tr>
+        <tr>
+          <td>Distribution programs</td>
+          <td>1 program (Affiliate)</td>
+          <td class="cell-r">4 parallel programs (Referral + KOL + Affiliate + Angels) <span class="badge-r">Redotpay wins</span></td>
+        </tr>
+        <tr>
+          <td>Geographic reach</td>
+          <td>Not publicly stated</td>
+          <td class="cell-r">160+ countries <span class="badge-r">Redotpay wins</span></td>
+        </tr>
+        <tr>
+          <td>Open registration</td>
+          <td class="cell-k">Yes — no KYC required to join affiliate program <span class="badge-k">KAST wins</span></td>
+          <td>KYC-verified account required before activation</td>
+        </tr>
+        <tr>
+          <td>Elite tier mechanics</td>
+          <td>VIP (invite-only, criteria not published)</td>
+          <td class="cell-r">Redot Angels — invite-only + event access + co-marketing <span class="badge-r">Redotpay wins</span></td>
+        </tr>
+        <tr>
+          <td>New user sign-up bonus</td>
+          <td>Not published as a standard feature</td>
+          <td class="cell-r">$5 USD for new users activating via referral code <span class="badge-r">Redotpay wins</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- ═══════════════════════════════════════
+     DOCUMENTED WEAKNESSES
+════════════════════════════════════════ -->
+<div class="section" id="weaknesses">
+  <div class="eyebrow eyebrow-o">Documented Weaknesses</div>
+  <h2 class="sh">Known gaps in both programs</h2>
+  <p class="ss">Each weakness is a specific, addressable structural failure — not speculation. These are sourced from public documentation, affiliate community reviews, and Trustpilot data as of March 2026.</p>
+
+  <div class="weak-grid">
+    <!-- KAST weaknesses -->
+    <div class="weak-col">
+      <div class="weak-col-header wch-k">
+        <div class="wch-badge wbg-k">K</div>
+        <div>
+          <div class="wch-name">KAST — Affiliate Program Gaps</div>
+        </div>
+      </div>
+      <div class="weak-card weak-card-k">
+        <span class="weak-sev sev-med">Medium</span>
+        <div class="weak-title">No dormant affiliate reactivation mechanic</div>
+        <div class="weak-body">No published mechanism for re-engaging affiliates who go silent (15+ days of no referral activity). This is the most common point of leakage in all affiliate programs — neither KAST nor Redotpay has addressed it with any documented system.</div>
+      </div>
+      <div class="weak-card weak-card-k">
+        <span class="weak-sev sev-med">Medium</span>
+        <div class="weak-title">VIP tier criteria entirely opaque</div>
+        <div class="weak-body">The top tier is invite-only with no public criteria, no application process, and no stated benefits. Affiliates cannot see or work toward elite status — reducing the motivational power of the top tier as a goal.</div>
+      </div>
+      <div class="weak-card weak-card-k">
+        <span class="weak-sev sev-med">Medium</span>
+        <div class="weak-title">KAST Points value tied to TGE execution risk</div>
+        <div class="weak-body">The dual-stack incentive depends on successful Q2 2026 TGE delivery. Points notional value ($0.10 FDV) is not locked. If TGE is delayed or underperforms, the token upside component of KAST's affiliate pitch is significantly weakened.</div>
+      </div>
+      <div class="weak-card weak-card-k">
+        <span class="weak-sev sev-med">Low</span>
+        <div class="weak-title">No creator-native tooling or affiliate community</div>
+        <div class="weak-body">No affiliate-specific creative assets, co-branded landing pages, UTM builders, or embeddable widgets. Affiliates are given a link and left to figure it out. No community forum, playbook, or performance coaching beyond the dashboard number.</div>
+      </div>
+    </div>
+
+    <!-- Redotpay weaknesses -->
+    <div class="weak-col">
+      <div class="weak-col-header wch-r">
+        <div class="wch-badge wbg-r">R</div>
+        <div>
+          <div class="wch-name">Redotpay — Affiliate Program Gaps</div>
+        </div>
+      </div>
+      <div class="weak-card weak-card-r weak-card-crit">
+        <span class="weak-sev sev-high">Critical</span>
+        <div class="weak-title">30-day transaction commission lag</div>
+        <div class="weak-body">Transaction commissions settle monthly. For affiliates in high-time-preference markets (SEA, LATAM, Africa), a 30-day cash flow wait is a dealbreaker. Confirmed as the primary reason KAST out-recruits Redotpay on KOL quality despite 1/6th the user base. Cashi should publish a weekly settlement as a direct counter-positioning claim.</div>
+      </div>
+      <div class="weak-card weak-card-r">
+        <span class="weak-sev sev-med">Medium</span>
+        <div class="weak-title">LV3 top-end rates and Redot Angels terms not published</div>
+        <div class="weak-body">LV1 and LV2 rates are now publicly confirmed. However, LV3 maximum commission rates and all Redot Angels terms remain undisclosed and individually negotiated. Affiliates cannot see the ceiling they're working toward — a residual trust friction a fully-transparent rate card still exploits.</div>
+      </div>
+      <div class="weak-card weak-card-r weak-card-crit">
+        <span class="weak-sev sev-high">Critical</span>
+        <div class="weak-title">$100 physical card fee — highest in category</div>
+        <div class="weak-body">Redotpay charges $100 for physical card issuance, compared to a free entry card at KAST. A significant portion of Redotpay's 6M user base has no physical card as a result. This is simultaneously a revenue model (high per-activation payouts) and an acquisition suppressor (highest barrier in the category).</div>
+      </div>
+      <div class="weak-card weak-card-r">
+        <span class="weak-sev sev-high">High</span>
+        <div class="weak-title">3.8/5 Trustpilot — service quality failures at scale</div>
+        <div class="weak-body">Frozen funds, 1–3 day KYC delays (vs. KAST's 2–3 minutes), and unresponsive support documented across reviews. 5+ senior departures (no active CFO as of early 2026). China-ties sensitivity ahead of a US IPO. At 6M users, these failures compound faster than they can be fixed through review-driven organic acquisition channels.</div>
+      </div>
+      <div class="weak-card weak-card-r">
+        <span class="weak-sev sev-med">Medium</span>
+        <div class="weak-title">No gamification, leaderboard, or competitive mechanic</div>
+        <div class="weak-body">No points, no leaderboard prizes, no competitive ranking system. Compared to KAST's daily USDC leaderboard prizes and points-to-TGE mechanic, Redotpay's affiliate program is purely transactional with no engagement or retention layer beyond the commission itself.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- ═══════════════════════════════════════
+     POSITIONING VERDICT
+════════════════════════════════════════ -->
+<div class="section section-alt" id="positioning">
+  <div class="eyebrow eyebrow-o">Positioning Verdict</div>
+  <h2 class="sh">Where each platform has staked its claim — and where Cashi enters</h2>
+  <p class="ss">Both programs have claimed distinct poles. The most valuable position in the category is the one neither has taken.</p>
+
+  <div class="verdict-grid">
+    <div class="verdict-card vc-k">
+      <div class="verdict-label vl-k">KAST owns</div>
+      <div class="verdict-title">Aspirational / Premium</div>
+      <div class="verdict-body">Metal cards, Luxe tier, concierge branding, elite affiliate bonuses. Instant USDC + TGE dual-stack attracts quality KOLs. Revenue per user ~$65 — 2–3× higher than Redotpay despite 1/6th the scale. Wins on unit economics and affiliate quality.</div>
+    </div>
+    <div class="verdict-card vc-r">
+      <div class="verdict-label vl-r">Redotpay owns</div>
+      <div class="verdict-title">Institutional / Scale</div>
+      <div class="verdict-body">B2B-first, 160+ countries, four parallel distribution programs, corridor strategy (BRL/MXN/NGN). 6M users, unicorn in 29 months. Wins on volume and geographic breadth. Revenue per user ~$25 — lower unit economics, higher absolute scale.</div>
+    </div>
+    <div class="verdict-card vc-cashi">
+      <div class="verdict-label vl-o">Cashi's open lane</div>
+      <div class="verdict-title">Affiliate-First, Creator-Native, Everyday</div>
+      <div class="verdict-body">Neither platform has claimed the transparent, community-first positioning. The mass-market everyday neobank for crypto — approachable, fast, rewarding from day one. Affiliates treated as partners, not a distribution channel.</div>
+      <div class="verdict-quote">"The affiliate program built for people who take this seriously." — Transparent economics, weekly payouts, real tooling, real community, micro-win feedback loops, and a clear ladder from first-time micro-affiliate to elite Black-tier partner.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- ═══════════════════════════════════════
+     SOURCES
+════════════════════════════════════════ -->
+<div class="section">
+  <div class="eyebrow eyebrow-n">Sources</div>
+  <h2 class="sh">Data provenance</h2>
+  <p class="ss">All data reflects available information as of March 2026. Derived estimates and partially-obscured figures are flagged in-document.</p>
+
+  <div class="sources-grid">
+    <div class="source-row">
+      <div class="source-dot sd-k"></div>
+      <div><a href="https://www.kast.xyz/affiliate" target="_blank">KAST Affiliate Program — kast.xyz/affiliate</a></div>
+    </div>
+    <div class="source-row">
+      <div class="source-dot sd-r"></div>
+      <div><a href="https://www.redotpay.com/affiliates" target="_blank">Redotpay Affiliate Program — redotpay.com/affiliates</a></div>
+    </div>
+    <div class="source-row">
+      <div class="source-dot sd-k"></div>
+      <div><a href="https://www.kast.xyz/blog/referral-program-just-leveled-up" target="_blank">KAST Referral Program Leveled Up — blog post</a></div>
+    </div>
+    <div class="source-row">
+      <div class="source-dot sd-r"></div>
+      <div><a href="https://www.redotpay.com/news/redotpay-affiliate-program" target="_blank">Redotpay Affiliate Program Announcement</a></div>
+    </div>
+    <div class="source-row">
+      <div class="source-dot sd-k"></div>
+      <div><a href="https://www.kast.xyz/blog/kast-affiliates-promo-earn-2x-commission-for-every-new-active-user" target="_blank">KAST 2× Commission Promo — blog post</a></div>
+    </div>
+    <div class="source-row">
+      <div class="source-dot sd-r"></div>
+      <div><a href="https://www.redotpay.com/hi/news/maximize-your-earnings-exploring-redotpays-four-reward-programs" target="_blank">Redotpay — Exploring Four Reward Programs</a></div>
+    </div>
+    <div class="source-row">
+      <div class="source-dot sd-k"></div>
+      <div><a href="https://eco.com/support/en/articles/13057444-what-is-kast-the-stablecoin-debit-card-for-spending-usdc-anywhere" target="_blank">KAST Help Centre — What is Kast? (via eco.com)</a></div>
+    </div>
+    <div class="source-row">
+      <div class="source-dot sd-r"></div>
+      <div><a href="https://helpcenter.redotpay.com/en/articles/10339296-invite-friends-and-earn-rewards" target="_blank">Redotpay Help Centre — Invite Friends and Earn Rewards</a></div>
+    </div>
+    <div class="source-row">
+      <div class="source-dot sd-r"></div>
+      <div><a href="https://blog.upay.best/redotpay-affiliate-program/" target="_blank">Redotpay Affiliate Program Review — UPay Blog</a></div>
+    </div>
+    <div class="source-row">
+      <div class="source-dot sd-r"></div>
+      <div><a href="https://fintechdeepak.com/redotpay-review/" target="_blank">Redotpay Review 2025 — Fintech Deepak</a></div>
+    </div>
+    <div class="source-row">
+      <div class="source-dot sd-o"></div>
+      <div>Internal synthesis: <em>Cashi Affiliate Program — Learnings, Gaps & Opportunities</em></div>
+    </div>
+    <div class="source-row">
+      <div class="source-dot sd-o"></div>
+      <div>Internal synthesis: <em>KAST & Redotpay — Competitive Intelligence</em></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="foot-logo">Cashi<span class="dot">.</span></div>
+  <div class="foot-note">Affiliate & Referral Programs Intel Brief — Confidential — March 2026</div>
+</footer>
+
+</body>
+</html>
